@@ -45,6 +45,7 @@ function reduce(array, fn, initial) {
   let result = initial ? initial : array[0];
   for (let i = initial ? 0 : 1; i < array.length; i++) {
     result = fn(result, array[i], i, array);
+    let a;
   }
   return result;
 }
